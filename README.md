@@ -28,7 +28,7 @@ Mobile:
 
 I chose to use Sass and I am going for a mobile-first approach.
 
-## [The result]() (tba)
+## [The result](https://charlottemoureau.github.io/Launch-countdown-timer/. ) (tba)
 
 This was me during the challenge: (tba)
 

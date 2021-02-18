@@ -49,7 +49,7 @@ body {
   font-size: 14px;
   font-family: 'Red Hat Text', sans-serif;
   height: 100vh;
-  background: url(/assets/images/pattern-hills.svg) no-repeat bottom right, url(/assets/images/bg-stars.svg), linear-gradient(#1e1f29, #191a24);
+  background: url(../../assets/images/pattern-hills.svg) no-repeat bottom right, url(../../assets/images/bg-stars.svg), linear-gradient(#1e1f29, #191a24);
   background-size: 300%, 100%, contain; }
   body main {
     width: 85%;
