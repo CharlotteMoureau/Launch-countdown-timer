@@ -1,0 +1,19 @@
+{
+  "name": "launch-countdown-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch src/scss --output src/css --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlotteMoureau/Launch-countdown-timer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlotteMoureau/Launch-countdown-timer/issues"
+  },
+  "homepage": "https://github.com/CharlotteMoureau/Launch-countdown-timer#readme"
+}
