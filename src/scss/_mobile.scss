@@ -34,11 +34,19 @@ body {
                 height: 100%;
 
                 .block {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
                     height: 75%;
                     margin-bottom: 15%;
-                    background-color: chartreuse;
+                    border-radius: 5px;
+                    background: linear-gradient(#2c2c44 50%, #34364f 50%);
+                    box-shadow: 0 10px 0 2px $neutral-4;
+
                     span {
                         color: $primary-2;
+                        font-size: 2rem;
+                        align-self: center;
                     }
                 }
 
@@ -74,7 +82,7 @@ body {
         }
       
         .attribution a {
-            color: hsl(228, 45%, 44%);
+            color: $primary-2;
         }
     }
 }

@@ -73,11 +73,18 @@ body {
         width: 20%;
         height: 100%; }
         body main .time .time-unit .block {
+          display: flex;
+          justify-content: center;
+          align-content: center;
           height: 75%;
           margin-bottom: 15%;
-          background-color: chartreuse; }
+          border-radius: 5px;
+          background: linear-gradient(#2c2c44 50%, #34364f 50%);
+          box-shadow: 0 10px 0 2px #191a24; }
           body main .time .time-unit .block span {
-            color: #fb6087; }
+            color: #fb6087;
+            font-size: 2rem;
+            align-self: center; }
         body main .time .time-unit h3 {
           color: #8486a9;
           text-transform: uppercase;
@@ -95,7 +102,7 @@ body {
     text-align: center;
     color: #8486a9; }
   body footer .attribution a {
-    color: #3e52a3; }
+    color: #fb6087; }
 
 @media screen and (min-width: 1008px) {
   body {
@@ -110,6 +117,8 @@ body {
       body main .time {
         height: 190px;
         margin-bottom: 35%; }
+        body main .time .time-unit .block span {
+          font-size: 4.5rem; }
         body main .time .time-unit h3 {
           font-size: 0.9rem;
           letter-spacing: 5px; }
