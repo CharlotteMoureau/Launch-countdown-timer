@@ -45,4 +45,76 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-size: 14px;
+  font-family: 'Red Hat Text', sans-serif;
+  height: 100vh;
+  background: url(/assets/images/pattern-hills.svg) no-repeat bottom right, url(/assets/images/bg-stars.svg), linear-gradient(#1e1f29, #191a24);
+  background-size: 300%, 100%, contain; }
+  body main {
+    width: 85%;
+    margin: auto;
+    padding-top: 40%;
+    text-align: center; }
+    body main h2 {
+      color: white;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      line-height: 25px;
+      margin-bottom: 15%; }
+    body main .time {
+      display: flex;
+      width: 100%;
+      height: 90px;
+      justify-content: space-between;
+      margin-bottom: 80%; }
+      body main .time .time-unit {
+        width: 20%;
+        height: 100%; }
+        body main .time .time-unit .block {
+          height: 75%;
+          margin-bottom: 15%;
+          background-color: chartreuse; }
+          body main .time .time-unit .block span {
+            color: #fb6087; }
+        body main .time .time-unit h3 {
+          color: #8486a9;
+          text-transform: uppercase;
+          font-size: 0.5rem;
+          letter-spacing: 3px; }
+  body footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin-bottom: 5%; }
+    body footer .social li a:hover img {
+      filter: invert(64%) sepia(54%) saturate(4445%) hue-rotate(310deg) brightness(100%) contrast(107%); }
+  body footer .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #8486a9; }
+  body footer .attribution a {
+    color: #3e52a3; }
+
+@media screen and (min-width: 1008px) {
+  body {
+    background-size: 100%, 100%, contain;
+    background-position: bottom center; }
+    body main {
+      width: 48%;
+      padding-top: 10%; }
+      body main h2 {
+        font-size: 1.4rem;
+        letter-spacing: 7px; }
+      body main .time {
+        height: 190px;
+        margin-bottom: 35%; }
+        body main .time .time-unit h3 {
+          font-size: 0.9rem;
+          letter-spacing: 5px; }
+    body footer .social {
+      gap: 2.5%;
+      margin-bottom: 2.5%; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+@import 'variables.scss';
+
+body {
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+    height: 100vh;
+    background: url(/assets/images/pattern-hills.svg) no-repeat bottom right, url(/assets/images/bg-stars.svg), linear-gradient($neutral-3, $neutral-4);
+    background-size: 300%, 100%, contain;
+
+    main {
+        width: 85%;
+        margin: auto;
+        padding-top: 40%;
+        text-align: center;
+
+        h2 {
+            color: $neutral-1;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 25px;
+            margin-bottom: 15%;
+        }
+
+        .time {
+            display: flex;
+            width: 100%;
+            height: 90px;
+            justify-content: space-between;
+            margin-bottom: 80%;
+
+            .time-unit {
+                width: 20%;
+                height: 100%;
+
+                .block {
+                    height: 75%;
+                    margin-bottom: 15%;
+                    background-color: chartreuse;
+                    span {
+                        color: $primary-2;
+                    }
+                }
+
+                h3 {
+                    color: $primary-1;
+                    text-transform: uppercase;
+                    font-size: 0.5rem;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 8%;
+            margin-bottom: 5%;
+
+            li {
+                a:hover {
+                    img {
+                        filter: invert(64%) sepia(54%) saturate(4445%) hue-rotate(310deg) brightness(100%) contrast(107%);
+                    }
+                }
+            }
+        }
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            color: $primary-1;
+        }
+      
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}

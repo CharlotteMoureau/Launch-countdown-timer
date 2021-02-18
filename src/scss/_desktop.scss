@@ -1,0 +1,36 @@
+@media screen and (min-width: 1008px) {
+
+    body {
+        background-size: 100%, 100%, contain;
+        background-position: bottom center;
+
+        main {
+            width: 48%;
+            padding-top: 10%;
+
+            h2 {
+                font-size: 1.4rem;
+                letter-spacing: 7px;
+            }
+
+            .time {
+                height: 190px;
+                margin-bottom: 35%;
+
+                .time-unit {
+                    h3 {
+                        font-size: 0.9rem;
+                        letter-spacing: 5px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            .social {
+                gap: 2.5%;
+                margin-bottom: 2.5%;
+            }
+        }
+    }
+}
