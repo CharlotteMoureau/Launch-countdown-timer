@@ -50,7 +50,8 @@ body {
   font-family: 'Red Hat Text', sans-serif;
   height: 100vh;
   background: url(../../assets/images/pattern-hills.svg) no-repeat bottom right, url(../../assets/images/bg-stars.svg), linear-gradient(#1e1f29, #191a24);
-  background-size: 300%, 100%, contain; }
+  background-size: 300%, 100%, contain;
+  position: relative; }
   body main {
     width: 85%;
     margin: auto;
@@ -90,19 +91,23 @@ body {
           text-transform: uppercase;
           font-size: 0.5rem;
           letter-spacing: 3px; }
-  body footer .social {
-    display: flex;
-    justify-content: center;
-    gap: 8%;
-    margin-bottom: 5%; }
-    body footer .social li a:hover img {
-      filter: invert(64%) sepia(54%) saturate(4445%) hue-rotate(310deg) brightness(100%) contrast(107%); }
-  body footer .attribution {
-    font-size: 11px;
-    text-align: center;
-    color: #8486a9; }
-  body footer .attribution a {
-    color: #fb6087; }
+  body footer {
+    position: absolute;
+    bottom: 2.5%;
+    width: 100%; }
+    body footer .social {
+      display: flex;
+      justify-content: center;
+      gap: 8%;
+      margin-bottom: 5%; }
+      body footer .social li a:hover img {
+        filter: invert(64%) sepia(54%) saturate(4445%) hue-rotate(310deg) brightness(100%) contrast(107%); }
+    body footer .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: #8486a9; }
+    body footer .attribution a {
+      color: #fb6087; }
 
 @media screen and (min-width: 1008px) {
   body {

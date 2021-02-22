@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background: url(../../assets/images/pattern-hills.svg) no-repeat bottom right, url(../../assets/images/bg-stars.svg), linear-gradient($neutral-3, $neutral-4);
     background-size: 300%, 100%, contain;
+    position: relative;
 
     main {
         width: 85%;
@@ -61,6 +62,10 @@ body {
     }
 
     footer {
+        position: absolute;
+        bottom: 2.5%;
+        width: 100%;
+
         .social {
             display: flex;
             justify-content: center;
