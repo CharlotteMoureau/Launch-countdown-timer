@@ -18,15 +18,43 @@
                 margin-bottom: 35%;
 
                 .time-unit {
+                    height: 190px;
+                    width: 143px;
+                    display: grid;
 
                     .block {
+                        height: 140px;
+                        width: 140px;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 0 2px $neutral-4;
+
                         span {
                             font-size: 4.5rem;
                         }
                     }
+
                     h3 {
                         font-size: 0.9rem;
                         letter-spacing: 5px;
+                        top: 170px;
+                        position: absolute;
+                        justify-self: center;
+                    }
+
+                    &:before {
+                        height: 10px;
+                        width: 7px;
+                        top: 65px;
+                        left: 0;
+                        background-color: $neutral-3;
+                    }
+
+                    &:after {
+                        height: 10px;
+                        width: 7px;
+                        top: 65px;
+                        left: 133px;
+                        background-color: $neutral-3;
                     }
                 }
             }

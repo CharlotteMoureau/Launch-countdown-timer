@@ -71,17 +71,20 @@ body {
       justify-content: space-between;
       margin-bottom: 80%; }
       body main .time .time-unit {
-        width: 20%;
-        height: 100%; }
+        width: 60px;
+        height: 90px;
+        position: relative;
+        padding-bottom: 5%; }
         body main .time .time-unit .block {
           display: flex;
+          position: absolute;
           justify-content: center;
           align-content: center;
-          height: 75%;
-          margin-bottom: 15%;
+          height: 60px;
+          width: 60px;
           border-radius: 5px;
           background: linear-gradient(#2c2c44 50%, #34364f 50%);
-          box-shadow: 0 10px 0 2px #191a24; }
+          box-shadow: 0 3px 0 2px #191a24; }
           body main .time .time-unit .block span {
             color: #fb6087;
             font-size: 2rem;
@@ -90,7 +93,33 @@ body {
           color: #8486a9;
           text-transform: uppercase;
           font-size: 0.5rem;
-          letter-spacing: 3px; }
+          letter-spacing: 3px;
+          position: relative;
+          top: 80px;
+          justify-self: center; }
+        body main .time .time-unit:before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          z-index: 1;
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+          height: 6px;
+          width: 4px;
+          top: 27px;
+          left: 0;
+          background-color: #1e1f29; }
+        body main .time .time-unit:after {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%;
+          height: 6px;
+          width: 4px;
+          top: 27px;
+          left: 56px;
+          background-color: #1e1f29; }
   body footer {
     position: absolute;
     bottom: 2.5%;
@@ -122,11 +151,35 @@ body {
       body main .time {
         height: 190px;
         margin-bottom: 35%; }
-        body main .time .time-unit .block span {
-          font-size: 4.5rem; }
-        body main .time .time-unit h3 {
-          font-size: 0.9rem;
-          letter-spacing: 5px; }
+        body main .time .time-unit {
+          height: 190px;
+          width: 143px;
+          display: grid; }
+          body main .time .time-unit .block {
+            height: 140px;
+            width: 140px;
+            border-radius: 10px;
+            box-shadow: 0 10px 0 2px #191a24; }
+            body main .time .time-unit .block span {
+              font-size: 4.5rem; }
+          body main .time .time-unit h3 {
+            font-size: 0.9rem;
+            letter-spacing: 5px;
+            top: 170px;
+            position: absolute;
+            justify-self: center; }
+          body main .time .time-unit:before {
+            height: 10px;
+            width: 7px;
+            top: 65px;
+            left: 0;
+            background-color: #1e1f29; }
+          body main .time .time-unit:after {
+            height: 10px;
+            width: 7px;
+            top: 65px;
+            left: 133px;
+            background-color: #1e1f29; }
     body footer .social {
       gap: 2.5%;
       margin-bottom: 2.5%; } }

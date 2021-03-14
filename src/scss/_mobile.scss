@@ -31,18 +31,21 @@ body {
             margin-bottom: 80%;
 
             .time-unit {
-                width: 20%;
-                height: 100%;
+                width: 60px;
+                height: 90px;
+                position: relative;
+                padding-bottom: 5%;
 
                 .block {
                     display: flex;
+                    position: absolute;
                     justify-content: center;
                     align-content: center;
-                    height: 75%;
-                    margin-bottom: 15%;
+                    height: 60px;
+                    width: 60px;
                     border-radius: 5px;
                     background: linear-gradient(#2c2c44 50%, #34364f 50%);
-                    box-shadow: 0 10px 0 2px $neutral-4;
+                    box-shadow: 0 3px 0 2px $neutral-4;
 
                     span {
                         color: $primary-2;
@@ -56,6 +59,36 @@ body {
                     text-transform: uppercase;
                     font-size: 0.5rem;
                     letter-spacing: 3px;
+                    position: relative;
+                    top: 80px;
+                    justify-self: center;
+                }
+
+                &:before{
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    z-index: 1;
+                    border-top-right-radius: 50%;
+                    border-bottom-right-radius: 50%;
+                    height: 6px;
+                    width: 4px;
+                    top: 27px;
+                    left: 0;
+                    background-color: $neutral-3;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    border-top-left-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                    height: 6px;
+                    width: 4px;
+                    top: 27px;
+                    left: 56px;
+                    background-color: $neutral-3;
                 }
             }
         }
